@@ -1,0 +1,98 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage{titlesec}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{float}
+\usepackage[left=2cm, right=2.60cm, top=2cm, bottom=2.50cm]{geometry}
+\usepackage[txtcentered=true, height=40pt, width=100pt]{thumbs}
+\usepackage[german]{babel}
+\usepackage[linewidth=1pt]{mdframed}
+\usepackage{subfigure}
+\usepackage[justification=centering]{caption}
+
+\newcommand{\fancythumb}[2]{
+	\addthumb{#1}{\large\sffamily\textbf{\space\space#1\vspace{5pt}}}{white}{#2}
+}
+
+\newcommand{\fancyformula}[2]{
+	\small
+	\raggedright\sffamily\textbf{#1}
+	#2
+}
+
+\newcommand{\ftransform}{
+	~\xrightarrow{~\mathcal{F}~}~
+}
+
+\DeclareMathOperator{\sinc}{sinc}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\rect}{rect}
+\DeclareMathOperator{\tri}{tri}
+\renewcommand{\Re}{\operatorname{Re}}
+\renewcommand{\Im}{\operatorname{Im}}
+
+\pagenumbering{arabic}
+\titleformat*{\section}{\sffamily\Large\bfseries}
+\titleformat*{\subsection}{\sffamily\large\bfseries}
+\titleformat*{\subsubsection}{\sffamily\normalsize\bfseries}
+
+
+
+
+
+\begin{document}
+\section*{Grundlagen}
+\fancythumb{Grundlagen}{red}
+\subsection*{Zeitdiskrete Signale}
+% ......
+\subsection*{Zeitdiskrete Systeme}
+% ......
+\subsection*{Impulsantwort und Faltung}
+% ......
+\subsection*{FIR und IIR}
+% ......
+\subsection*{Fourierreihe und Fouriertransformation}
+% ......
+
+
+\newpage
+\section*{z-Transformation}
+\fancythumb{z-Transform}{orange}
+
+
+\newpage
+\section*{Digitale Filter}
+\fancythumb{Digitale Filter}{yellow}
+
+
+\newpage
+\section*{Korrelation}
+\fancythumb{Korrelation}{green}
+
+
+\newpage
+\section*{DFT und FFT}
+\fancythumb{DFT und FFT}{cyan}
+
+
+\newpage
+\section*{Spektralanalyse}
+\fancythumb{Spektralanalyse}{blue}
+
+
+\newpage
+\section*{Mathe}
+\fancythumb{Mathe}{violet}
+
+
+\end{document}
